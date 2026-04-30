@@ -1,0 +1,57 @@
+{
+  "migrated_at": "2026-04-27T14:52:57.725351",
+  "source_root": "d:\\project\\marriage_agent\\Collected legal data",
+  "target_root": "d:\\project\\marriage_agent\\RAGdata",
+  "source_file_counts": {
+    "法律条文": 134,
+    "司法解释": 3,
+    "裁判案例": 15
+  },
+  "target_chunk_counts": {
+    "法律条文": 134,
+    "司法解释": 141,
+    "裁判案例": 15
+  },
+  "total_chunks": 290,
+  "collections": {
+    "law_articles": {
+      "file": "法律条文/law_articles.json",
+      "count": 134,
+      "fields": [
+        "chunk_id",
+        "law_name",
+        "part",
+        "article_number",
+        "content",
+        "chunk_text"
+      ]
+    },
+    "judicial_interpretations": {
+      "file": "司法解释/judicial_interpretations.json",
+      "count": 141,
+      "fields": [
+        "chunk_id",
+        "title",
+        "document_number",
+        "article_number",
+        "content",
+        "chunk_text"
+      ]
+    },
+    "court_cases": {
+      "file": "裁判案例/court_cases.json",
+      "count": 15,
+      "fields": [
+        "chunk_id",
+        "case_id",
+        "title",
+        "dispute_type",
+        "facts_summary",
+        "court_reasoning",
+        "judgment_result",
+        "content",
+        "chunk_text"
+      ]
+    }
+  }
+}
